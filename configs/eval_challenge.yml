@@ -1,0 +1,22 @@
+INPUT:
+  PIXEL_MEAN: [0.485, 0.456, 0.406]
+  PIXEL_STD: [0.229, 0.224, 0.225]
+  GENERATED_VIEW_SIZE: [480, 270]
+  MULTIPLICATIVE_FACTOR: 2
+  TRANSFORMS: False
+
+TEST:
+  IMS_PER_BATCH: 1
+  WEIGHT: "models/model_challenge.pth"
+
+DATASETS:
+  TRAIN: "sviewds"
+  TEST: "challenge"
+  EVALUATION: True
+  EVAL_ON: "test"
+  RUN_METRICS: False
+
+DATALOADER:
+  NUM_WORKERS: 8
+
+OUTPUT_DIR: "logs/sviewds_public_baseline"

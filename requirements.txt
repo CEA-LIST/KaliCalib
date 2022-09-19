@@ -1,0 +1,6 @@
+deepsport-utilities >= 4.0.9
+torch
+torchvision
+tqdm
+yacs
+pytorch-ignite
