@@ -26,7 +26,7 @@ from deepsport_utilities.ds.instants_dataset.views_transforms import (
     UndistortTransform,
 )
 from deepsport_utilities.transforms import IncompatibleCropException
-from deepsport_utilities.utils import Subset, SubsetType
+from deepsport_utilities.dataset import Subset, SubsetType
 
 from data import transforms
 
